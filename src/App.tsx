@@ -1,17 +1,17 @@
 
 import { useEffect, useState } from 'react';
 import './App.css'
-import bg1 from "./assets/background1.jpg"
-import bg2 from "./assets/background2.jpg"
+import bg2 from "./assets/background1.jpg"
+import bg1 from "./assets/background2.jpg"
 import bg3 from "./assets/background3.jpg"
 import {Routes,Route} from 'react-router-dom'
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { CgClose } from 'react-icons/cg';
 import Taskbar from './components/Taskbar';
 import Twitter from './Routes/twitter/Twitter';
-import Add from './Routes/Add';
-import Discord from './Routes/discord/Discord';
-import Github from './Routes/github/Github';
+// import Add from './Routes/Add';
+// import Discord from './Routes/discord/Discord';
+// import Github from './Routes/github/Github';
 import Instagram from './Routes/insta/Instagram';
 
 
@@ -54,9 +54,9 @@ function App() {
       <Routes>
         <Route path='/twitter' element= {<Twitter/>}/>
         <Route path='/insta' element= {<Instagram/>}/>
-        <Route path='/github' element= {<Github/>}/>
-        <Route path='/discord' element= {<Discord/>}/>
-        <Route path='/add' element= {<Add/>}/>
+        <Route path='/github' element= {<Instagram/>}/>
+        <Route path='/discord' element= {<Instagram/>}/>
+        <Route path='/add' element= {<Instagram/>}/>
       </Routes>
     </div>
   )

@@ -1,0 +1,19 @@
+.insta{
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 75vh;
+  background-color: rgb(196, 197, 197,.3);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid dimgray ;
+}
+
+.text{
+  font-size: 2rem;
+  width: 20vw;
+}

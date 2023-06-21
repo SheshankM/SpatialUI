@@ -8,11 +8,10 @@ import {MdOutlineBookmarks} from "react-icons/md"
 import {BsPeople,BsThreeDots} from "react-icons/bs";
 import {LuVerified} from "react-icons/lu"
 import "./twitter.css"
-import { useState } from "react"
+import TweetBox from "../../components/TweetBox"
 const Twitter = () => {
-  const [click,setClicked] = useState(false);
   return (
-    <div className={click? "twitter tilted": "twitter"}>
+    <div className="twitter">
       <div className="sidedock">
         <div className="social"><BsTwitter/></div>
         <div className="social-options">
@@ -28,7 +27,15 @@ const Twitter = () => {
         </div>
       </div>
       <div className="mainbar">
-        <button onClick={()=>setClicked(true)}>click</button>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
+       <TweetBox/>
       </div>
       <div className="sidebar"></div>
     </div>
