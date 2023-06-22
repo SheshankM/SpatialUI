@@ -1,5 +1,5 @@
 .tweet-box{
-  width: 98% ;
+  width: 97% ;
   height: auto;
   /* border: 1px solid white; */
   background-color: rgba(104, 104, 104, 0.4);
@@ -7,16 +7,75 @@
   border-radius: 15px;
   display: flex;
   padding: 0.5rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .profile-pic{
-  flex: 1;
-  align-self: flex-start;
+  flex: 0.75;
+  align-self:flex-start;
+  padding: 0.2rem 0 0 0.2rem;
 }
+.profile-pic img{
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+}
+
 .tweet-body{
-  flex: 10;
+  flex: 10.5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: rgb(255, 255, 255,);
+}
+.tweet-body .username{
+  flex: 1.5;
+  font-size: 0.9rem;
+}
+.tweet-body .username .unq{
+  font-size: 0.8rem;
+  padding-left: 0.4rem;
+  color: rgb(178, 178, 178);
+}
+.tweet-body .tweet{
+  flex: 9;
+  font-weight:400;
+  font-size: 0.85rem
+}
+
+.tweet-body .metrics{
+  flex: 1.5;
+  width: 55%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0.6rem 0 0.3rem 0rem;
+}
+.tweet-body .metrics div span{
+  font-size: 0.75rem;
+  color:rgb(152, 151, 151);
+  text-align: center;
+  margin-left: .2rem;
+}
+.tweet-body .metrics div{
+  font-size: 0.9rem;
+  padding: 0.1rem 0.2rem;
+  color: rgb(152, 151, 151);
+}
+.tweet-body .metrics div:hover{
+  color: white;
 }
 .tweet-dots{
-  flex: 1;
+  flex: 0.75;
+  width: 100%;
+  text-align: center;
+  color: rgb(162, 162, 162);
+}
+.tweet-dots svg{
+  padding: 0.1rem;
+}
+.tweet-dots svg:hover{
+  color: white;
 }
 
