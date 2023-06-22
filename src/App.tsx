@@ -4,6 +4,14 @@ import './App.css'
 import bg2 from "./assets/background1.jpg"
 import bg1 from "./assets/background2.jpg"
 import bg3 from "./assets/background3.jpg"
+import bg4 from "./assets/background4.jpg"
+import bg5 from "./assets/background5.jpg"
+import bg6 from "./assets/background6.jpg"
+import bg7 from "./assets/background7.jpg"
+import bg8 from "./assets/background8.jpg"
+import bg9 from "./assets/background9.jpg"
+import bg10 from "./assets/background10.jpg"
+import bg11 from "./assets/background11.jpg"
 import {Routes,Route} from 'react-router-dom'
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { CgClose } from 'react-icons/cg';
@@ -15,7 +23,7 @@ import Twitter from './Routes/twitter/Twitter';
 import Instagram from './Routes/insta/Instagram';
 
 
-const bgArray = [bg1, bg2, bg3];
+const bgArray = [bg1, bg2, bg3,bg4,bg5,bg6,bg7,bg8,bg8,bg9,bg10,bg11];
 function App() {
   const [clicked, setClicked] = useState(false);
   const [bg, setBg] = useState(bg1);

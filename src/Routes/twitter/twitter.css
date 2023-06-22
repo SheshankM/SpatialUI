@@ -76,17 +76,17 @@
   flex-direction: column;
   /* justify-content: start; */
   padding: 1rem 0.8rem;
-  overflow-y: auto;
+  overflow-y: scroll;
   gap: 0.5rem;
   box-sizing: border-box;
 }
 
-/* .mainbar::-webkit-scrollbar{
+.mainbar::-webkit-scrollbar{
   width: 5px;
 }
 .mainbar::-webkit-scrollbar-thumb:hover {
   background: #555; 
-} */
+}
 
 .sidebar{
   flex: 4.5;
