@@ -59,7 +59,7 @@
 }
 
 .sidedock .social-options svg:hover{
-  background-color: rgb(192, 193, 194,.2);
+  background-color: rgba(202, 203, 205, 0.5);
   border-radius: 50%;
   transition: 0.2s;
 }

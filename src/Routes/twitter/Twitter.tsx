@@ -9,7 +9,14 @@ import {BsPeople,BsThreeDots} from "react-icons/bs";
 import {LuVerified} from "react-icons/lu"
 import "./twitter.css"
 import TweetBox from "../../components/TweetBox"
+import { TwitterContext } from "../../Context";
+import { TwitterContextType } from "../../@types/twitter"
+import { useContext } from "react"
+
+
 const Twitter = () => {
+  const {main}  = useContext(TwitterContext) as TwitterContextType;
+  const name = "sheshank"
   return (
     <div className="twitter">
       <div className="sidedock">
@@ -27,15 +34,14 @@ const Twitter = () => {
         </div>
       </div>
       <div className="mainbar">
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
-       <TweetBox/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
+       <TweetBox tweets ={main} name={name}/>
       </div>
       <div className="sidebar"></div>
     </div>

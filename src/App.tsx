@@ -21,6 +21,7 @@ import Twitter from './Routes/twitter/Twitter';
 // import Discord from './Routes/discord/Discord';
 // import Github from './Routes/github/Github';
 import Instagram from './Routes/insta/Instagram';
+import TwitterProvider from './Context';
 
 
 const bgArray = [bg1, bg2, bg3,bg4,bg5,bg6,bg7,bg8,bg8,bg9,bg10,bg11];
@@ -59,6 +60,7 @@ function App() {
       )}
       <img src={bg} alt="" className='main-bg' style={{ width: width, height: height }} />
       <Taskbar />
+      <TwitterProvider>
       <Routes>
         <Route path='/twitter' element= {<Twitter/>}/>
         <Route path='/insta' element= {<Instagram/>}/>
@@ -66,6 +68,7 @@ function App() {
         <Route path='/discord' element= {<Instagram/>}/>
         <Route path='/add' element= {<Instagram/>}/>
       </Routes>
+      </TwitterProvider>
     </div>
   )
 }

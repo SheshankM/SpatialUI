@@ -2,7 +2,8 @@
   width: 97% ;
   height: auto;
   /* border: 1px solid white; */
-  background-color: rgba(104, 104, 104, 0.4);
+  /* background-color: rgba(104, 104, 104, 0.4); */
+  background-color: rgb(119, 114, 110,0.2);
   backdrop-filter: blur(20px);
   border-radius: 15px;
   display: flex;

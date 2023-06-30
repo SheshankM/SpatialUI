@@ -2,9 +2,14 @@ import "../components/styles/tweetbox.css"
 import profile from "../assets/background1.jpg"
 import {BsChat,BsThreeDots} from "react-icons/bs"
 import {LuShare} from "react-icons/lu"
-
+import { Tweets } from "../@types/twitter"
 import {AiOutlineHeart,AiOutlineRetweet} from "react-icons/ai"
-const TweetBox = () => {
+interface propsTypes{
+  tweets: Tweets[],
+  name: string
+}
+
+const TweetBox : React.FC<propsTypes>= ({tweets} ) => {
   return (
     <div className="tweet-box">
       <div className="profile-pic">
@@ -12,13 +17,13 @@ const TweetBox = () => {
       </div>
       <div className="tweet-body">
         <div className="username">
-          <span>SheshankM8</span><span className="unq">@shank__it</span>
+          <span>{tweets[0].name}</span><span className="unq">{tweets[0].username}</span>
         </div>
         <div className="tweet" >
-          Another day another ui kit
+          {tweets[0].tweet}
         </div>
         <div className="metrics">
-          <div><BsChat/><span>16</span></div>
+          <div><BsChat/><span>{tweets[0].commentsCount}</span></div>
           <div><AiOutlineRetweet/></div>
           <div><AiOutlineHeart/></div>
           <div><LuShare/></div>
